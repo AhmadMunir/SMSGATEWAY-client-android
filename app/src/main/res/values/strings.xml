@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Smsbaru</string>
+    <string-array name="daftar_pulsa">
+        <item>5.000</item>
+        <item>10.000</item>
+        <item>20.000</item>
+        <item>25.000</item>
+        <item>50.000</item>
+        <item>100.000</item>
+
+    </string-array>
+</resources>

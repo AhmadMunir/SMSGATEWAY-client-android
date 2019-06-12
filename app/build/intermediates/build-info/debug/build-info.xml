@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="armeabi-v7a,armeabi"
+    api-level="23"
+    build-mode="HOT_WARM"
+    density="xhdpi"
+    format="10"
+    plugin-version="3.4.1"
+    timestamp="1560317185279"
+    token="2190867613754241009"
+    verifier="COMPATIBLE" >
+
+    <task
+        name="javac"
+        duration="112" />
+    <task
+        name="instant-run-dex"
+        duration="9" />
+    <task
+        name="instant-run-transform"
+        duration="27" />
+    <task
+        name="verifier"
+        duration="0" />
+
+    <artifact
+        location="/home/khalila/AndroidStudioProjects/Smsbaru/app/build/intermediates/reload-dex/debug/classes.dex"
+        type="RELOAD_DEX" />
+
+    <build
+        build-mode="FULL"
+        timestamp="1560314111798"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/home/khalila/AndroidStudioProjects/Smsbaru/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/khalila/AndroidStudioProjects/Smsbaru/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/khalila/AndroidStudioProjects/Smsbaru/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/khalila/AndroidStudioProjects/Smsbaru/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/khalila/AndroidStudioProjects/Smsbaru/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/khalila/AndroidStudioProjects/Smsbaru/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/khalila/AndroidStudioProjects/Smsbaru/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/khalila/AndroidStudioProjects/Smsbaru/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/khalila/AndroidStudioProjects/Smsbaru/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/khalila/AndroidStudioProjects/Smsbaru/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/khalila/AndroidStudioProjects/Smsbaru/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/khalila/AndroidStudioProjects/Smsbaru/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
+            type="SPLIT_MAIN" />
+    </build>
+    <build
+        build-mode="COLD"
+        ir-eligibility="CLASS_ADDED"
+        timestamp="1560315714737"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/home/khalila/AndroidStudioProjects/Smsbaru/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/khalila/AndroidStudioProjects/Smsbaru/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/khalila/AndroidStudioProjects/Smsbaru/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/khalila/AndroidStudioProjects/Smsbaru/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/khalila/AndroidStudioProjects/Smsbaru/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/khalila/AndroidStudioProjects/Smsbaru/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
+            type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        ir-eligibility="COMPATIBLE"
+        timestamp="1560316714493"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/home/khalila/AndroidStudioProjects/Smsbaru/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/khalila/AndroidStudioProjects/Smsbaru/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
+            type="SPLIT_MAIN" />
+    </build>
+    <build
+        build-mode="HOT_WARM"
+        timestamp="1560317144101"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/home/khalila/AndroidStudioProjects/Smsbaru/app/build/intermediates/builds/debug/1560317144101/classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        build-mode="HOT_WARM"
+        timestamp="1560317185279"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/home/khalila/AndroidStudioProjects/Smsbaru/app/build/intermediates/reload-dex/debug/classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+
+</instant-run>
