@@ -14,18 +14,21 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     // static variable
     private static final int DATABASE_VERSION = 1;
 
-    // Database isi_sms
+    // Database op
     private static final String DATABASE_NAME = "SmsGateway";
 
-    // table isi_sms
+    // table op
     private static final String TABLE_NAME = "tbl_sms";
 
     // column tables
     private static final String KEY_ID = "id";
     private static final String KEY_NOTUJUAN = "no_tujuan";
-    private static final String KEY_ISISMS = "isi_sms";
+    private static final String KEY_OP = "op";
+    private static final String KEY_NOMINAL = "nominal";
     private static final String KEY_STATUS = "status";
     private static final String KEY_WAKTU = "waktu";
+    private static final String KEY_KETERANGAN = "keterangan";
+    private static final String KEY_JENIS = "jenis";
 
     public DatabaseHandler(Context context){
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -36,7 +39,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         String CREATE_CONTACTS_TABLE = "CREATE TABLE " + TABLE_NAME + "("
                 + KEY_ID + " INTEGER PRIMARY KEY AUTOINCREMENT," + KEY_NOTUJUAN + " TEXT,"
-                + KEY_ISISMS + " TEXT,"+ KEY_STATUS + " TEXT," + KEY_WAKTU + " TEXT"+")";
+                + KEY_OP + " TEXT,"+ KEY_NOMINAL + " TEXT,"+ KEY_STATUS + " TEXT," + KEY_WAKTU + " TEXT,"+ KEY_KETERANGAN +" TEXT, "+ KEY_JENIS +" TEXT "+")";
         db.execSQL(CREATE_CONTACTS_TABLE);
     }
 
@@ -47,36 +50,22 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         onCreate(db);
     }
 
-    public void addRecord(SmsModels smsModels){
+    public void addRecord(SmsModels smsmodels){
         SQLiteDatabase db  = getWritableDatabase();
 
         ContentValues values = new ContentValues();
-        values.put(KEY_NOTUJUAN, smsModels.getIsi_sms());
-        values.put(KEY_ISISMS, smsModels.getNo_tujuan());
-        values.put(KEY_STATUS, smsModels.getStatus());
-        values.put(KEY_WAKTU, smsModels.getWaktu());
+        values.put(KEY_NOTUJUAN, smsmodels.getNo_tujuan());
+        values.put(KEY_OP, smsmodels.getOp());
+        values.put(KEY_NOMINAL, smsmodels.getNominal());
+        values.put(KEY_STATUS, smsmodels.getStatus());
+        values.put(KEY_WAKTU, smsmodels.getWaktu());
+        values.put(KEY_KETERANGAN, smsmodels.getKeterangan());
+        values.put(KEY_JENIS, smsmodels.getJenis());
 
         db.insert(TABLE_NAME, null, values);
         db.close();
     }
 
-    public SmsModels getContact(int id) {
-        SQLiteDatabase db = this.getReadableDatabase();
-
-        Cursor cursor = db.query(TABLE_NAME, new String[] { KEY_ID,
-                        KEY_NOTUJUAN, KEY_ISISMS }, KEY_ID + "=?",
-                new String[] { String.valueOf(id) }, null, null, null, null);
-        if (cursor != null)
-            cursor.moveToFirst();
-
-        SmsModels contact = new SmsModels(
-                cursor.getString(1),
-                cursor.getString(2),
-                cursor.getString(3),
-                cursor.getString(4));
-        // return contact
-        return contact;
-    }
 
     // get All Record
     public List<SmsModels> getAllRecord() {
@@ -91,7 +80,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
             do {
                 SmsModels smsModels = new SmsModels();
 
-                smsModels.setIsi_sms(cursor.getString(1));
+                smsModels.setOp(cursor.getString(1));
                 smsModels.setNo_tujuan(cursor.getString(2));
                 smsModels.setStatus(cursor.getString(3));
                 smsModels.setWaktu(cursor.getString(4));
@@ -108,8 +97,8 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
 
         ContentValues values = new ContentValues();
-        values.put(KEY_NOTUJUAN, contact.getIsi_sms());
-        values.put(KEY_ISISMS, contact.getNo_tujuan());
+        values.put(KEY_NOTUJUAN, contact.getOp());
+        values.put(KEY_OP, contact.getNo_tujuan());
 
         // updating row
         return db.update(TABLE_NAME, values, KEY_ID + " = ?",

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SIPULsa"
+        android:textSize="40sp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        />
+    <Button
+        android:layout_below="@+id/judul"
+        android:id="@+id/buttonpulsa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pulsa"
+        android:onClick="actpulsa"/>
+    <Button
+        android:id="@+id/lpulsa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Laporan Penjualan Pulsa"
+        android:layout_below="@+id/buttonpulsa"
+        android:onClick="lpulsa"/>
+    <Button
+        android:layout_below="@+id/lpulsa"
+        android:id="@+id/buttonpaket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pulsa"
+        android:onClick="actpaket"/>
+    <Button
+        android:id="@+id/laporan_paket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Laporan Penjualan Pulsa"
+        android:layout_below="@+id/buttonpaket"
+        android:onClick="lpaket"/>
+
+</RelativeLayout>

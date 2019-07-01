@@ -21,7 +21,11 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.example.smsbaru.MainActivity" >
+        <activity android:name="com.example.smsbaru.Lpaket" />
+        <activity android:name="com.example.smsbaru.Mainpaket" />
+        <activity android:name="com.example.smsbaru.Lpulsa" />
+        <activity android:name="com.example.smsbaru.MainActivity" />
+        <activity android:name="com.example.smsbaru.Home" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

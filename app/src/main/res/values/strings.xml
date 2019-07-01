@@ -7,6 +7,22 @@
         <item>25.000</item>
         <item>50.000</item>
         <item>100.000</item>
-
+    </string-array>
+    <string-array name="daftar_op">
+        <item>Indosat</item>
+        <item>Telkomsel</item>
+        <item>XL</item>
+        <item>Tri</item>
+        <item>Axis</item>
+    </string-array>
+    <string-array name="daftar_paket">
+        <item>1 GB</item>
+        <item>2 GB</item>
+        <item>3 GB</item>
+        <item>5 GB</item>
+        <item>10 GB</item>
+        <item>20 GB</item>
+        <item>50 GB</item>
+        <item>100 GB</item>
     </string-array>
 </resources>
